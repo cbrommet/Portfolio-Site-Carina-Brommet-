@@ -34,3 +34,27 @@ a:active {color:#1F7DB1}
     border: 2px solid #1F7DB1}
 button.contact:hover {background-color: #1F7DB1; color: #ffffff}
 button.contact:active {background-color: #1F7DB1; color: #ffffff; text-decoration: underline;}
+/*Layout styline */
+.container {padding: 0 15px;}
+.row {margin: 25px 0;}
+.logo {max-width: 250px;}
+header {background-color: #c3e2f3; 
+    text-align: center; 
+    padding-left: 10px 0;
+    width: [object Object]px; 
+    height: [object Object]px; 
+    background: #c3e2f3; 
+    border: solid #BDBDBD 1px; 
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+    -webkit-box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+    -moz-box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+    position: relative;
+    }
+nav > ul {list-style-type: none; padding:0}
+nav > ul > li {display: inline-block;}
+nav > ul > li > a {padding: 0 15px; text-transform: uppercase; font-weight: 700; color: #1F7DB1}
+nav > ul > li > a:visited {padding: 0 15px; text-transform: uppercase; font-weight: 700; color: #4A4949;}
+nav > ul > li > a:hover {padding: 0 15px; text-transform: uppercase; font-weight: 700; color: #119F97}
+nav > ul > li > a:active {padding: 0 15px; text-transform: uppercase; font-weight: 700; color: #1F7DB1; text-decoration: underline;}
+nav {display: inline-block; width: 100%;}
+#hero {background-color: #c3e2f3; padding: 20px 0; display: inline-block; width: 100%;}
