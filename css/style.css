@@ -27,7 +27,7 @@ a:active {color:#1F7DB1}
     border-radius: 3px; 
     border-bottom: 2px solid #4A4949; 
     transition: 02.s opacity;
-    box-sizing: border-box}
+    transition-property; opacity}
 .button:hover {opacity: 0.8; text-decoration: none;}
 .button:active {opacity: 0.8; text-decoration: underline;}
 .button.contact {background-color: transparent; 
@@ -39,6 +39,7 @@ button.contact:active {background-color: #1F7DB1; color: #ffffff; text-decoratio
 /*Layout styline */
 .container {padding: 0 15px;}
 .row {margin: 25px 0;}
+.row::after {content:""; clear: both; display: table;}
 .logo {max-width: 250px;}
 header {background-color: #c3e2f3; 
     text-align: center; 
@@ -51,7 +52,8 @@ header {background-color: #c3e2f3;
     -webkit-box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.5)  ; 
     -moz-box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.5)  ; 
     position: relative; 
-    box-sizing: border-box
+    box-sizing: border-box; 
+    border-bottom: 3px solid #4a4a4a;
     }
 nav > ul {list-style-type: none; padding:0}
 nav > ul > li {display: inline-block;}
@@ -60,4 +62,38 @@ nav > ul > li > a:visited {padding: 0 15px; text-transform: uppercase; font-weig
 nav > ul > li > a:hover {padding: 0 15px; text-transform: uppercase; font-weight: 700; color: #119F97}
 nav > ul > li > a:active {padding: 0 15px; text-transform: uppercase; font-weight: 700; color: #1F7DB1; text-decoration: underline;}
 nav {display: inline-block; width: 100%;}
-#hero {background-color: #c3e2f3; padding: 20px 0; display: inline-block; width: 100%; box-sizing: border-box}
+#hero {background-color: #c3e2f3; padding: 99px 0; display: inline-block; width: 100%; box-sizing: border-box; border-bottom: 3px solid #4a4a4a; text-align: center;}
+#projects {border-bottom: 3px solid #4a4a4a;}
+#animated-picture {width: 100%;
+    max-width: 100%;
+    height: auto;}
+@keyframes color-change {
+     0% {fill: #edc655;}
+     50% {fill: #fcffad;}
+    100% {fill: #f76414;}}
+.sun {animation: 4s color-change infinite alternate linear;}
+@keyframes cloud-move {from {transform: translate(0,50px);}to {transform: translate(200px,50px);}}
+.cloud-front { animation: 30s cloud-move infinite alternate linear;}
+@keyframes cloud-move-reverse {from {transform: translate(446px,48px);}to {transform: translate(100px, 48px);}}
+.cloud-back {animation: 34s cloud-move-reverse infinite alternate linear;}
+
+/*Medium devices (640px and larger)*/
+@media only screen and (min-width:640px) {header {text-align: unset; padding: 20px 0 13px;}
+nav {width: auto; 
+    float: right; 
+    margin-top: 4px;}
+.col-md-6 {width: 50%;}
+[class*="col-"] {float: left; padding-left: 10px}
+body {font-size: 18px}
+#project-header {text-align: center;}
+#hero {padding: 99px}}
+
+/*Large devices (1024px or larger)*/
+@media only screen and (min-width: 1024px) {
+    col-lg-7 {width: 60%}
+    col-lg-5 {width: 40%}
+    .container {max-width: 1200px;
+                margin-left: auto; 
+                margin-right: auto;}}
+/*X-large devices (1440px or larger)*/
+@media only screen and (min-width: 1440px) {}

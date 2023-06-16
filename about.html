@@ -15,10 +15,7 @@
     <body>
         <header>
             <div class="container">
-                <picture>
-                    <source srcset="img/logo-1x.png" media="(max-width:600px)">
-                    <img src="img/logo-2x.png" alt="Carina Brommet Logo">
-                  </picture>
+                <a href="index.html"><img src="img/new-logo.svg" class="logo" alt="Carina Brommet"></a>
             <nav>
                 <ul class="navigation">
                   <li><a href="index.html">Work</a></li>
@@ -29,15 +26,22 @@
             </div>
         </header>
         <main> 
-           <div id="hero">
             <div class="container">
-                <h1>About Me</h1>
-                <img class="logo">
-                    <source srcset="img/carina-brommet-profile-1x.jpg" media="(max-width:600px)">
-                   <img src="img/carina-brommet-profile-2x.jpg" alt="Carina Brommet Profile">
-                </img>
-                <div>
-                    <div>
+                <div id="hero">
+                    <h1>About Me</h1>
+                </div>
+                <div class="containter">
+                <div class="row" id="profile">
+                    <div class="col-md-6">
+                        <h2>HELLO! NICE TO MEET YOU.</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/carina-brommet-profile-2x.jpg" alt="profile pic" id="profilepic">
+                    </div>
+                </div>
+            </div>
+             <div class="container">
+                <div id="about">
                         <h2>My Story</h2>
                         <p>
                             I’m a UI/UX designer based in Northern California with a passion for blending creativity with functionality and accessibility to make products that can improve the lives of users. I have always been passionate about visual storytelling, receiving a bachelor’s degree in visual communication before I went on to earn a master’s in screenwriting for film and television. In the years since then, I have held a variety of roles, from copywriting to operations and administrative support. Now, I am blending my visual, creative background with my experience in logistics to pursue a career in UI/UX design. 
@@ -46,8 +50,11 @@
                             I also still dabble in creative writing, especially in the podcast space, and in my free time enjoy reading, traveling, and playing video games. 
                         </p>
                         <a href="files/cb-operations-resume-2023.pdf" download>Download my resume</a>
+                        </div>
+                        <div class="row" id="sub-about">
                         <h2>Skils & Tools</h2>
-                            <div class="row">
+                        </div>
+                        <div class="row" class="col-md-6">
                                 <h3>Relevant Skills</h3>
                                 <ul>
                                     <li>Ideation</li>
@@ -65,6 +72,7 @@
                                 </ul>
                             </div>
                             <div>
+                                <div class="row" class="col-md-6">
                                 <h3>Tools</h3>
                                 <ul>
                                     <li>Figma</li>
@@ -77,7 +85,6 @@
                             </div>
                     </div>
                 </div>
-               
             </div>
         </main>
         <footer>
