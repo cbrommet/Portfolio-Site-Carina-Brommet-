@@ -15,20 +15,24 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/2277b7e037.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <a href="index.html"><img src="img/new-logo.svg" class="logo" alt="Carina Brommet"></a>
-            <nav>
-                <ul class="navigation">
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html"><img src="img/new-logo.svg" class="logo" alt="Carina Brommet"></a>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                    class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
     </header>
     <main>
         <div id="hero">
@@ -1592,7 +1596,9 @@
             <p>Copyright Carina Brommet 2023</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.1.min.js"
+        integrity="sha256-UnTxHm+zKuDPLfufgEMnKGXDl6fEIjtM+n1Q6lL73ok=" crossorigin="anonymous">
+    </script>
     <script src="js/scripts.js"></script>
 </body>
-
 </html>
