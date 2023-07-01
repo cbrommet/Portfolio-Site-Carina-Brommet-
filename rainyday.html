@@ -27,22 +27,19 @@
                     <ul class="navigation">
                         <li><a href="index.html">Work</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
                         <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
                                     class="fas fa-bars"></i></a></li>
                     </ul>
                 </nav>
             </div>
+        </div>
     </header>
     <main>
         <div id="hero">
             <div class="container">
                 <h1>RainyDay (Finance App)</h1>
                 <span></span>
-                <picture>
-                    <source srcset="img/finance-app/1x/title-page-1x.png" media="(max-width:600px)">
-                    <img src="img/finance-app/2x/title-page-2x.png" alt="RainyDay Finance App">
-                </picture>
                 <p>
                     RainyDay is a responsive web app with a mission to take the fear out of finance, allowing users to
                     easily save for any life goal, big or small. Simply connect your bank, set up a goal, and the app
@@ -60,10 +57,12 @@
                     the fear out of finance.
                 </p>
                 <h4>GOALS</h4>
-                <picture>
-                    <source srcset="img/finance-app/1x/goals-blurb-1x.png" media="(max-width:600px)">
-                    <img src="img/finance-app/2x/goals-blurb-2x.png" alt="RainyDay Finance App">
-                </picture>
+                <div class="center">
+                    <picture>
+                        <source srcset="img/finance-app/1x/goals-blurb-1x.png" media="(max-width:600px)">
+                        <img id="goals-picture" src="img/finance-app/2x/goals-blurb-2x.png" alt="RainyDay Finance App">
+                    </picture>
+                </div>
                 <h2>02 THE USER</h2>
                 <picture>
                     <source srcset="img/finance-app/1x/w-banner-1x.png" media="(max-width:600px)">
@@ -91,11 +90,11 @@
                 </p>
                 <picture>
                     <source srcset="img/finance-app/1x/logo-image-1x.png" media="(max-width:600px)">
-                    <img src="img/finance-app/2x/logo-image-2x.png" alt="RainyDay Finance App">
+                    <img id="logo-image" src="img/finance-app/2x/logo-image-2x.png" alt="RainyDay Finance App">
                 </picture>
                 <picture>
                     <source srcset="img/finance-app/1x/logo-primary-1x.png" media="(max-width:600px)">
-                    <img src="img/finance-app/2x/logo-primary-2x.png" alt="RainyDay Finance App">
+                    <img id="logo-primary" src="img/finance-app/2x/logo-primary-2x.png" alt="RainyDay Finance App">
                 </picture>
                 <h3>COLOR</h3>
                 <p>
@@ -200,59 +199,56 @@
                 Do you like my work and want to discuss opportunities? Please get in touch.
             </p>
             <p>
-                Call: <a href="tel:+17703598514">770.359.8514</a> or reach out via email by clicking the link below.
+                You can reach me via email at cbrommet@gmail.com or by clicking the link below.
             </p>
             <div>
                 <a href="mailto:cbrommet@gmail.com" class="button contact">Send me an email</a>
             </div>
-        </div>
-        <div>
-            <p></p>
-            <a href="https://www.linkedin.com/in/carina-brommet-b403352b/" target="_blank">
-                <?xml version="1.0" ?>
-                <!DOCTYPE svg
-                    PUBLIC '-//W3C//DTD SVG 1.0//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg
-                    enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32"
-                    width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g>
-                        <circle clip-rule="evenodd" cx="16" cy="16" fill="#007BB5" fill-rule="evenodd" r="16" />
+            <div>
+                <p></p>
+                <a href="https://www.linkedin.com/in/carina-brommet-b403352b/" target="_blank">
+                    <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" viewBox="0 0 32 32"
+                        width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g>
-                            <rect fill="#FFFFFF" height="14" width="4" x="7" y="11" />
-                            <path
-                                d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z"
-                                fill="#FFFFFF" />
-                            <circle cx="9" cy="8" fill="#FFFFFF" r="2" />
+                            <circle clip-rule="evenodd" cx="16" cy="16" fill="#007BB5" fill-rule="evenodd" r="16" />
+                            <g>
+                                <rect fill="#FFFFFF" height="14" width="4" x="7" y="11" />
+                                <path
+                                    d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z"
+                                    fill="#FFFFFF" />
+                                <circle cx="9" cy="8" fill="#FFFFFF" r="2" />
+                            </g>
                         </g>
-                    </g>
-                    <g />
-                    <g />
-                    <g />
-                    <g />
-                    <g />
-                    <g />
-                </svg>
-            </a>
-            <a href="https://www.behance.net/carinabrommet" target="_blank">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_120_1048)">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M16 0C24.8306 0 32 7.16938 32 16C32 24.8306 24.8306 32 16 32C7.16938 32 0 24.8306 0 16C0 7.16938 7.16938 0 16 0ZM26.9206 19.3378C26.9708 18.5818 26.9092 17.8601 26.7342 17.1689C26.5576 16.4766 26.2744 15.8594 25.8778 15.3199C25.4807 14.7794 24.9748 14.3476 24.3587 14.0286C23.7394 13.7055 23.0182 13.5471 22.1939 13.5471C21.4472 13.5471 20.7731 13.6796 20.1616 13.9432C19.5507 14.2083 19.0262 14.5707 18.5835 15.0299C18.1418 15.4866 17.8053 16.0313 17.563 16.6625C17.3248 17.2916 17.2031 17.9719 17.2031 18.7004C17.2031 19.4538 17.3201 20.1491 17.5526 20.7772C17.7877 21.4084 18.1175 21.9458 18.5421 22.4004C18.9781 22.8534 19.4958 23.2004 20.1156 23.4484C20.7359 23.6928 21.4266 23.817 22.1939 23.817C23.2952 23.817 24.2396 23.5649 25.0147 23.059C25.7991 22.5547 26.3733 21.7174 26.7523 20.5447H24.3954C24.3043 20.8461 24.0682 21.1365 23.6804 21.4084C23.289 21.6807 22.823 21.8169 22.2835 21.8169C21.5327 21.8169 20.9533 21.6201 20.5521 21.2287C20.1503 20.8372 19.8904 20.1082 19.8904 19.3378H26.9206ZM11.5833 23.5649C12.1871 23.5649 12.7757 23.4887 13.3426 23.3386C13.9163 23.1879 14.4274 22.9559 14.8732 22.6406C15.3154 22.3279 15.6742 21.9225 15.9377 21.4223C16.1992 20.9279 16.3296 20.3407 16.3296 19.6583C16.3296 18.8164 16.1292 18.0988 15.7207 17.4987C15.3143 16.9028 14.7002 16.4839 13.8734 16.2457C14.4807 15.9578 14.9358 15.5876 15.2454 15.1361C15.5535 14.6836 15.7067 14.1176 15.7067 13.4404C15.7067 12.8144 15.6038 12.2847 15.3993 11.8617C15.189 11.4325 14.8954 11.0918 14.5206 10.8355C14.1395 10.5792 13.6896 10.3923 13.1614 10.2805C12.6307 10.165 12.0498 10.1096 11.4062 10.1096H5.0625V23.5649H11.5833ZM11.2457 17.5681C11.8831 17.5681 12.4014 17.7146 12.7907 18.0098C13.1785 18.3085 13.3743 18.8014 13.3743 19.4947C13.3743 19.8483 13.3168 20.1414 13.1971 20.3671C13.0781 20.5939 12.9134 20.7731 12.7156 20.9035C12.5168 21.0392 12.2822 21.1313 12.0172 21.1888C11.7562 21.2473 11.4787 21.2732 11.1872 21.2732H8.02462V17.5681H11.2457ZM23.6271 16.1095C23.3086 15.7579 22.7707 15.5674 22.1136 15.5674C21.6859 15.5674 21.3323 15.6394 21.0486 15.7859C20.7711 15.9309 20.5443 16.1106 20.3708 16.3228C20.1979 16.5383 20.0809 16.7661 20.012 17.0094C19.9437 17.2465 19.9023 17.4614 19.8904 17.6514H24.2437C24.1801 16.969 23.9466 16.4642 23.6271 16.1095ZM10.7968 12.4017C11.0593 12.4017 11.3146 12.4204 11.5589 12.4681C11.8069 12.511 12.0213 12.5898 12.2108 12.7041C12.4014 12.8144 12.5531 12.9713 12.6675 13.1722C12.7777 13.3731 12.8321 13.632 12.8321 13.9447C12.8321 14.5091 12.6675 14.9197 12.3268 15.1687C11.9825 15.4214 11.5476 15.5457 11.0231 15.5457H8.02462V12.4017H10.7968ZM24.7967 12.3402V11.0126H19.3426V12.3402H24.7967Z"
-                            fill="black" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_120_1048">
-                            <rect width="32" height="32" fill="white" />
-                        </clipPath>
-                    </defs>
-                </svg>
-            </a>
-        </div>
-        <p>Copyright Carina Brommet 2023</p>
+                        <g />
+                        <g />
+                        <g />
+                        <g />
+                        <g />
+                        <g />
+                    </svg>
+                </a>
+                <a href="https://www.behance.net/carinabrommet" target="_blank">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_120_1048)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16 0C24.8306 0 32 7.16938 32 16C32 24.8306 24.8306 32 16 32C7.16938 32 0 24.8306 0 16C0 7.16938 7.16938 0 16 0ZM26.9206 19.3378C26.9708 18.5818 26.9092 17.8601 26.7342 17.1689C26.5576 16.4766 26.2744 15.8594 25.8778 15.3199C25.4807 14.7794 24.9748 14.3476 24.3587 14.0286C23.7394 13.7055 23.0182 13.5471 22.1939 13.5471C21.4472 13.5471 20.7731 13.6796 20.1616 13.9432C19.5507 14.2083 19.0262 14.5707 18.5835 15.0299C18.1418 15.4866 17.8053 16.0313 17.563 16.6625C17.3248 17.2916 17.2031 17.9719 17.2031 18.7004C17.2031 19.4538 17.3201 20.1491 17.5526 20.7772C17.7877 21.4084 18.1175 21.9458 18.5421 22.4004C18.9781 22.8534 19.4958 23.2004 20.1156 23.4484C20.7359 23.6928 21.4266 23.817 22.1939 23.817C23.2952 23.817 24.2396 23.5649 25.0147 23.059C25.7991 22.5547 26.3733 21.7174 26.7523 20.5447H24.3954C24.3043 20.8461 24.0682 21.1365 23.6804 21.4084C23.289 21.6807 22.823 21.8169 22.2835 21.8169C21.5327 21.8169 20.9533 21.6201 20.5521 21.2287C20.1503 20.8372 19.8904 20.1082 19.8904 19.3378H26.9206ZM11.5833 23.5649C12.1871 23.5649 12.7757 23.4887 13.3426 23.3386C13.9163 23.1879 14.4274 22.9559 14.8732 22.6406C15.3154 22.3279 15.6742 21.9225 15.9377 21.4223C16.1992 20.9279 16.3296 20.3407 16.3296 19.6583C16.3296 18.8164 16.1292 18.0988 15.7207 17.4987C15.3143 16.9028 14.7002 16.4839 13.8734 16.2457C14.4807 15.9578 14.9358 15.5876 15.2454 15.1361C15.5535 14.6836 15.7067 14.1176 15.7067 13.4404C15.7067 12.8144 15.6038 12.2847 15.3993 11.8617C15.189 11.4325 14.8954 11.0918 14.5206 10.8355C14.1395 10.5792 13.6896 10.3923 13.1614 10.2805C12.6307 10.165 12.0498 10.1096 11.4062 10.1096H5.0625V23.5649H11.5833ZM11.2457 17.5681C11.8831 17.5681 12.4014 17.7146 12.7907 18.0098C13.1785 18.3085 13.3743 18.8014 13.3743 19.4947C13.3743 19.8483 13.3168 20.1414 13.1971 20.3671C13.0781 20.5939 12.9134 20.7731 12.7156 20.9035C12.5168 21.0392 12.2822 21.1313 12.0172 21.1888C11.7562 21.2473 11.4787 21.2732 11.1872 21.2732H8.02462V17.5681H11.2457ZM23.6271 16.1095C23.3086 15.7579 22.7707 15.5674 22.1136 15.5674C21.6859 15.5674 21.3323 15.6394 21.0486 15.7859C20.7711 15.9309 20.5443 16.1106 20.3708 16.3228C20.1979 16.5383 20.0809 16.7661 20.012 17.0094C19.9437 17.2465 19.9023 17.4614 19.8904 17.6514H24.2437C24.1801 16.969 23.9466 16.4642 23.6271 16.1095ZM10.7968 12.4017C11.0593 12.4017 11.3146 12.4204 11.5589 12.4681C11.8069 12.511 12.0213 12.5898 12.2108 12.7041C12.4014 12.8144 12.5531 12.9713 12.6675 13.1722C12.7777 13.3731 12.8321 13.632 12.8321 13.9447C12.8321 14.5091 12.6675 14.9197 12.3268 15.1687C11.9825 15.4214 11.5476 15.5457 11.0231 15.5457H8.02462V12.4017H10.7968ZM24.7967 12.3402V11.0126H19.3426V12.3402H24.7967Z"
+                                fill="black" />
+                        </g>
+                        <defs>
+                            <clippath id="clip0_120_1048">
+                                <rect width="32" height="32" fill="white" />
+                            </clippath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <p>Copyright Carina Brommet 2023</p>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-migrate-3.4.1.min.js"
-        integrity="sha256-UnTxHm+zKuDPLfufgEMnKGXDl6fEIjtM+n1Q6lL73ok=" crossorigin="anonymous"></script>
+        integrity="sha256-UnTxHm+zKuDPLfufgEMnKGXDl6fEIjtM+n1Q6lL73ok=" crossorigin="anonymous">
+        </script>
     <script src="js/scripts.js"></script>
 </body>
 

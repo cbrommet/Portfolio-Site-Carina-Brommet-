@@ -90,9 +90,9 @@ a:active {
 
 .button.contact {
     background-color: transparent;
-    color: #1F7DB1;
+    color: #000000;
     text-transform: uppercase;
-    border: 2px solid #1F7DB1
+    border: 2px solid #000000
 }
 
 button.contact:hover {
@@ -126,11 +126,12 @@ button.contact:active {
 }
 
 header {
-    background-color: #c3e2f3;
+    background-color: #ADD8E6;
     padding: 10px 0 4px;
     width: [object Object]px;
     height: [object Object]px;
-    background: #c3e2f3;
+    background: #ADD8E6;
+    color: #ffffff;
     border: solid #BDBDBD 1px;
     box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.5);
@@ -175,22 +176,32 @@ nav>ul>li>a:active {
 }
 
 #hero {
-    background-color: #c3e2f3;
-    padding: 99px 0;
+    background-color: #1F7DB1;
+    color: #ffffff;
     display: inline-block;
     width: 100%;
     border-bottom: 3px solid #4a4a4a;
     text-align: center;
 }
 
-#projects {
-    border-bottom: 3px solid #4a4a4a;
+#about-heading {
+    margin-bottom: 75px
+}
+
+#sub-about {
+    margin-top: 75px;
+    border-bottom: 3px solid #4a4a4a
 }
 
 #animated-picture {
     width: 100%;
     max-width: 100%;
     height: auto;
+    margin-top: 75px;
+}
+
+#css-text {
+    margin-top: 250px
 }
 
 @keyframes color-change {
@@ -274,6 +285,15 @@ nav>ul>li>a:active {
     padding: 0 0 10px;
 }
 
+.center {
+    text-align: center;
+}
+
+footer {
+    background-color: #ADD8E6;
+    border-top: 3px solid #4a4a4a;
+}
+
 /*Medium devices (640px and larger)*/
 @media only screen and (min-width:640px) {
     header {
@@ -325,9 +345,33 @@ nav>ul>li>a:active {
     }
 
     nav>ul {
-        margin: 1em 0;
+        margin-top: 10px;
+    }
+
+    .navtoggle.responsive li {
+        padding: 0;
+        border-top: 0;
+    }
+
+    .navtoggle.responsive nav {
+        padding: 0;
+    }
+
+    #goals-picture {
+        max-width: 600px;
+    }
+
+    #logo-image {
+        max-width: 250px;
+        margin-bottom: 50px;
+    }
+
+    #logo-primary {
+        max-width: 600px;
     }
 }
+
+
 
 /*Large devices (1024px or larger)*/
 @media only screen and (min-width: 1024px) {
@@ -341,6 +385,12 @@ nav>ul>li>a:active {
 
     .container {
         max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #projects.container {
+        max-width: 1400px;
         margin-left: auto;
         margin-right: auto;
     }
